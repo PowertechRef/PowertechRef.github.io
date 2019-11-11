@@ -3,10 +3,13 @@
 <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'>
+    <a-scene arjs="debugUIEnabled: false;">
     <a-assets>
-      <a-asset-item id="smiley" src="https://rawcdn.githack.com/DanLav98/MODELTEST/fee5c532f8d3b069e07409c57fcb56b8faddfb42/Skid_for_GitHub_2.gltf"></a-asset-item>
+      <a-asset-item id="smiley" src="https://rawcdn.githack.com/PowertechRef/MODELTEST/62f4788d98b83d3732ac7c1453a1191be5e5aa71/Banana .gltf"></a-asset-item>
     </a-assets>
   	<a-marker preset="hiro">
       <a-entity gltf-model="#smiley" rotation= "0 0 0">
